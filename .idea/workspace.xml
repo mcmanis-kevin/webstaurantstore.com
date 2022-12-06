@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="549a3efc-e0ab-4305-bf1c-a12af4d09823" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/function_libraries/Webdriver_Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/managers/Webdriver_Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Home_Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/IndividualProductDetails_Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/IndividualSearchProductTile_Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/PageMenu_Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/ShoppingCart_Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/Base_Tests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/SearchFunctionalityTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng/demo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/function_libraries/Webdriver_Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/function_libraries/Webdriver_Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managers/Webdriver_Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managers/Webdriver_Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Home_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/GlobalHeader_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/IndividualProductDetails_Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/IndividualSearchProductTile_Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/PageMenu_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Search_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/ShoppingCart_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Cart_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/Base_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/Base_Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/SearchFunctionalityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/SearchFunctionalityTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,15 +99,27 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/testcases/SearchFunctionalityTests.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="12" />
+          <line>33</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pageobjects/ShoppingCart_Page.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/test/java/testcases/SearchFunctionalityTests.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcases/SearchFunctionalityTests.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="emptyCartText_PageObject.getText()" />
+        <watch expression="shoppingCartPage.emptyCartText().equalsIgnoreCase(&quot;Your cart is empty&quot;)" />
+        <watch expression="shoppingCartPage.emptyCartText()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -20,11 +20,11 @@ public class Webdriver_Library {
     }
 
     public WebElement isClickable(WebElement element) {
-        return new WebDriverWait(_webdriver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(element));
+        return new WebDriverWait(_webdriver, Duration.ofSeconds(20)).until(ExpectedConditions.elementToBeClickable(element));
     }
 
-    public WebElement isPresent(By by) {
-        return new WebDriverWait(_webdriver, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(by));
+    public void isPresent(By by) {
+        new WebDriverWait(_webdriver, Duration.ofSeconds(10)).until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
 }

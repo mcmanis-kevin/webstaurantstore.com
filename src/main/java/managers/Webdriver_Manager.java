@@ -4,6 +4,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
+
 public class Webdriver_Manager {
 
     public static WebDriver _webdriver;
@@ -15,6 +17,7 @@ public class Webdriver_Manager {
                     .arch32()
                     .capabilities(chromeOptions())
                     .create();
+//            _webdriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         } catch (Exception e) {
             e.printStackTrace();
         }

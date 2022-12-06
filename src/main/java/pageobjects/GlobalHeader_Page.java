@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import static managers.Webdriver_Manager._webdriver;
 
-public class Home_Page extends Webdriver_Library {
+public class GlobalHeader_Page extends Webdriver_Library {
 
     @CacheLookup
     @FindBy(css = "svg[aria-label='Webstaurantstore Logo']")
@@ -22,7 +22,7 @@ public class Home_Page extends Webdriver_Library {
     @FindBy(css = "button[Value='Search']")
     WebElement searchButton_PageObject = null;
 
-    public Home_Page() {
+    public GlobalHeader_Page() {
         PageFactory.initElements(_webdriver, this);
     }
 

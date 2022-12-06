@@ -62,7 +62,7 @@
                     <configuration>
                         <source>${project.java-version}</source>
                         <target>${project.java-version}</target>
-                        <encodeing>${project.build.sourceEncoding}</encodeing>
+                        <encoding>${project.build.sourceEncoding}</encoding>
                     </configuration>
                 </plugin>
 

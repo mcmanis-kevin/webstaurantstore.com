@@ -3,7 +3,7 @@ package base;
 import managers.Webdriver_Manager;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import pageobjects.Home_Page;
+import pageobjects.GlobalHeader_Page;
 
 import static managers.Webdriver_Manager._webdriver;
 
@@ -22,7 +22,7 @@ public class Base_Tests {
     )
     public void navigateToUrl() {
         _webdriver.get("https://www.webstaurantstore.com/");
-        new Home_Page().checkIsDisplayedWebstaurantLogo();
+        new GlobalHeader_Page().checkIsDisplayedWebstaurantLogo();
     }
 
     @AfterTest(
